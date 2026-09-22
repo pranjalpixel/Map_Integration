@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Delhi Explorer</title>
+
+
+    <!-- =========================
+         LEAFLET CSS
+    ========================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    >
+
+
+    <!-- =========================
+         OUR CSS
+    ========================== -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <div class="app">
+
+
+        <!-- =========================
+             SIDEBAR
+        ========================== -->
+
+        <aside class="sidebar">
+
+            <h1>
+                Delhi Explorer
+            </h1>
+
+            <p class="subtitle">
+                Explore places around Delhi
+            </p>
+
+
+            <!-- SEARCH -->
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Search places..."
+            >
+
+
+            <!-- FILTERS -->
+
+            <div class="filters">
+
+                <button
+                    class="filter active"
+                    data-category="all"
+                >
+                    All
+                </button>
+
+
+                <button
+                    class="filter"
+                    data-category="Historical"
+                >
+                    Monuments
+                </button>
+
+
+                <button
+                    class="filter"
+                    data-category="Religious"
+                >
+                    Temples
+                </button>
+
+
+                <button
+                    class="filter"
+                    data-category="Shopping"
+                >
+                    Markets
+                </button>
+
+
+                <button
+                    class="filter"
+                    data-category="Park"
+                >
+                    Parks
+                </button>
+
+
+                <button
+                    class="filter"
+                    data-category="Entertainment"
+                >
+                    Entertainment
+                </button>
+
+
+                <button
+                    class="filter"
+                    data-category="Landmark"
+                >
+                    Landmarks
+                </button>
+
+            </div>
+
+
+            <!-- =========================
+                 PLACES LIST
+            ========================== -->
+
+            <div id="places-list"></div>
+
+        </aside>
+
+
+        <!-- =========================
+             MAP
+        ========================== -->
+
+        <main id="map"></main>
+
+    </div>
+
+
+    <!-- =========================
+         LEAFLET JS
+    ========================== -->
+
+    <script
+        src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+    </script>
+
+
+    <!-- =========================
+         PLACES DATA
+    ========================== -->
+
+    <script src="js/places.js"></script>
+
+
+    <!-- =========================
+         OUR MAP JAVASCRIPT
+    ========================== -->
+
+    <script src="js/map.js"></script>
+
+</body>
+
+</html>
